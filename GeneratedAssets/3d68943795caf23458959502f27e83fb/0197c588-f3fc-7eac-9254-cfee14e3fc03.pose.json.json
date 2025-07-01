@@ -1,0 +1,10 @@
+{
+    "asset": "08e439c50eca82846a4c8bbad0119db0",
+    "fileName": "0197c588-f3fc-7eac-9254-cfee14e3fc03.pose.json",
+    "prompt": "Create animations for a 2D pixel-art male protagonist in a platformer game. Include Idle (cloak fluttering), Run, Jump, Fall, and Wall Cling animations. The character is a young warrior with a rugged cloak, a determined expression, and a glowing artifact. Ensure animations reflect agile movements and a dark fantasy tone.",
+    "negativePrompt": "",
+    "model": "a9c27ca4-3ec9-43e8-96cd-ee891aba64c5",
+    "modelName": "Text to Motion",
+    "customSeed": 650786130,
+    "w3CTraceId": "bf46487749dd153d994c4ad76704ff9d"
+}

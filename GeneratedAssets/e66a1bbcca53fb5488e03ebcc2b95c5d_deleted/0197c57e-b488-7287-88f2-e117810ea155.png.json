@@ -1,0 +1,20 @@
+{
+    "asset": "e66a1bbcca53fb5488e03ebcc2b95c5d",
+    "fileName": "0197c57e-b488-7287-88f2-e117810ea155.png",
+    "prompt": "2D pixel-art style main character for a platformer game, a young woman with a determined personality, agile movement, and magical aura. Design should be slightly mysterious but heroic, with a color palette of cool tones like blue and purple.",
+    "negativePrompt": "",
+    "model": "9119be98-fcff-405c-a1af-375ec1d026cd",
+    "modelName": "Little Monster Maker",
+    "customSeed": -1,
+    "w3CTraceId": "4c4310ca822d850683e67882fab7a1c5",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

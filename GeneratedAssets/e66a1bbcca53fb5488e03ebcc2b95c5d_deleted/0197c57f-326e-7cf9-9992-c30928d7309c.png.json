@@ -1,0 +1,20 @@
+{
+    "asset": "e66a1bbcca53fb5488e03ebcc2b95c5d",
+    "fileName": "0197c57f-326e-7cf9-9992-c30928d7309c.png",
+    "prompt": "Create a 2D pixel-art style male protagonist for a platformer game with a dark fantasy tone. He is a young warrior known as the \"Last Hero,\" trained by the kingdom to defeat the last surviving witch. After completing his mission, he embarks on a journey to find an elixir to save his sick sister.\r\n\r\nCharacter Traits:\r\n- Wears a rugged cloak or cape, slightly tattered from battle\r\n- Determined, slightly tormented expression\r\n- Slim but strong build, agile movements\r\n- Color palette: deep red, dark gray, and gold accents\r\n- Carries a small glowing artifact or a light weapon\r\n\r\nGameplay Requirements:\r\n- Include a character controller prefab with 2D platformer movement (run, jump, wall slide)\r\n- Animator setup with Idle, Run, Jump, Fall, and Wall Cling animations\r\n- Use Unity's Input System for control\r\n- Include Rigidbody2D and BoxCollider2D\r\n- Support for dash or special action (can be a placeholder for future magic/melee ability)\r\n\r\nOptional:\r\n- Idle animation with cloak fluttering\r\n- Slight glow from the artif",
+    "negativePrompt": "",
+    "model": "9119be98-fcff-405c-a1af-375ec1d026cd",
+    "modelName": "Little Monster Maker",
+    "customSeed": -1,
+    "w3CTraceId": "e3e524a9efe0c94b65d3c254bcfbb5a2",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

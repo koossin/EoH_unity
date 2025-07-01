@@ -66,5 +66,7 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj",
     },
-    "dotnet.defaultSolution": "Echoes of Her.sln"
+    "dotnet.defaultSolution": "Echoes of Her.sln",
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always"
 }

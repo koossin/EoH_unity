@@ -1,0 +1,20 @@
+{
+    "asset": "c0b21bc045d592b4d9deadca4b974587",
+    "fileName": "0197c57f-fa43-7de8-ae68-058953cbd107.png",
+    "prompt": "2D pixel-art style male protagonist for a platformer game with a dark fantasy tone. The character is a young warrior known as the 'Last Hero,' wearing a rugged, slightly tattered cloak or cape. He has a determined, slightly tormented expression, a slim but strong build, and agile movements. The color palette includes deep red, dark gray, and gold accents. He carries a small glowing artifact or a light weapon.",
+    "negativePrompt": "",
+    "model": "9119be98-fcff-405c-a1af-375ec1d026cd",
+    "modelName": "Little Monster Maker",
+    "customSeed": -1,
+    "w3CTraceId": "ddda6c1f80ed29249a8555eea08ab5b4",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

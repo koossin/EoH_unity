@@ -1,0 +1,20 @@
+{
+    "asset": "e66a1bbcca53fb5488e03ebcc2b95c5d",
+    "fileName": "0197c581-ae3d-7916-a35b-f63955d76ae3.png",
+    "prompt": "2D pixel-art style male protagonist for a platformer game with a dark fantasy tone. The character is a young warrior known as the 'Last Hero,' wearing a rugged, slightly tattered cloak or cape. He has a determined, slightly tormented expression, a slim but strong build, and agile movements. The color palette includes deep red, dark gray, and gold accents. He carries a small glowing artifact or a light weapon.",
+    "negativePrompt": "",
+    "model": "242b56c1-2224-41c4-8949-2ba760bbfc69",
+    "modelName": "16-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "1dae9e2b1183c6a5aaf07020034db8f1",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

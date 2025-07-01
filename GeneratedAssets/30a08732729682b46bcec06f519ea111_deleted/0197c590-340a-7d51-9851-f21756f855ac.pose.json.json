@@ -1,0 +1,10 @@
+{
+    "asset": "30a08732729682b46bcec06f519ea111",
+    "fileName": "0197c590-340a-7d51-9851-f21756f855ac.pose.json",
+    "prompt": "An idle animation for a 2D pixel-art male protagonist in a platformer game. The character stands with a calm but determined expression, his cloak subtly fluttering in the wind. The style matches a dark fantasy tone, with minimal movement to show he's ready to act.",
+    "negativePrompt": "",
+    "model": "a9c27ca4-3ec9-43e8-96cd-ee891aba64c5",
+    "modelName": "Text to Motion",
+    "customSeed": 827923474,
+    "w3CTraceId": "9dd4ca8a3f02145899e793f99be2901d"
+}

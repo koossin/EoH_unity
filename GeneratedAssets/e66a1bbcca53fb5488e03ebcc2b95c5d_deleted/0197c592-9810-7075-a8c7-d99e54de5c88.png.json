@@ -1,0 +1,20 @@
+{
+    "asset": "e66a1bbcca53fb5488e03ebcc2b95c5d",
+    "fileName": "0197c592-9810-7075-a8c7-d99e54de5c88.png",
+    "prompt": "Generate a pixel-art sprite sheet (4–6 frames) for the idle animation of a dark fantasy male protagonist in a 2D platformer. The frames should show subtle cloak movement and readiness to act.\r\n",
+    "negativePrompt": "",
+    "model": "242b56c1-2224-41c4-8949-2ba760bbfc69",
+    "modelName": "16-bit Pixel",
+    "customSeed": -1,
+    "w3CTraceId": "857e6ff8105a4dba837321cdbbc8b815",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
