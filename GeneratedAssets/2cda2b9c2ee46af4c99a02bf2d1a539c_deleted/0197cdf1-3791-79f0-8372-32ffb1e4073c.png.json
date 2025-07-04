@@ -1,0 +1,20 @@
+{
+    "asset": "2cda2b9c2ee46af4c99a02bf2d1a539c",
+    "fileName": "0197cdf1-3791-79f0-8372-32ffb1e4073c.png",
+    "prompt": "2D pixel game tile",
+    "negativePrompt": "",
+    "model": "9119be98-fcff-405c-a1af-375ec1d026cd",
+    "modelName": "Little Monster Maker",
+    "customSeed": -1,
+    "w3CTraceId": "b1f9e6cc0b28475344b94f47bb4b0fd6",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
