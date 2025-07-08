@@ -36,6 +36,7 @@
 # Visual Code config
 .vsconfig
 
+
 # Gradle cache directory
 .gradle/
 
@@ -99,3 +100,6 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+#koossin's ignore files
+Assets/BigManJD/
