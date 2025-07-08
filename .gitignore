@@ -36,6 +36,9 @@
 # Visual Code config
 .vsconfig
 
+# Visual Code config
+.vsconfig
+
 # Gradle cache directory
 .gradle/
 
