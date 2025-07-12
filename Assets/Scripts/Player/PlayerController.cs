@@ -12,6 +12,12 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.1f;
 
+    // jump buffer & coyote time
+    public float coyoteTime = 0.1f;
+    public float jumpBufferTime = 0.1f;
+    private float coyoteCounter;
+    private float jumpBufferCounter;
+
     private PolygonCollider2D polyCollider;
     private Vector2[] originalPoints;
 
@@ -25,6 +31,10 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 moveInput;
     private bool isGrounded;
+
+    private float groundLockTime = 0.1f; // 점프 직후 지면 판정 무시할 시간
+    private float groundLockCounter = 0f;
+
 
     void Awake()
     {
@@ -45,7 +55,7 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = moveAction.ReadValue<Vector2>();
 
-        // 좌우 입력 방향으로 반전 및 콜라이더 갱신
+        // 방향 반전 및 콜라이더 좌우 반전
         if (moveInput.x != 0)
         {
             bool shouldFlip = moveInput.x < 0;
@@ -54,7 +64,6 @@ public class PlayerController : MonoBehaviour
             {
                 sr.flipX = shouldFlip;
 
-                // flip 시에만 콜라이더 점 반전
                 Vector2[] flippedPoints = new Vector2[originalPoints.Length];
                 for (int i = 0; i < originalPoints.Length; i++)
                 {
@@ -64,23 +73,68 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // 점프
-        if (jumpAction.triggered && isGrounded)
+        // 점프 입력 기억 (버퍼)
+        if (jumpAction.triggered)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpBufferCounter = jumpBufferTime;
+        }
+        else
+        {
+            jumpBufferCounter -= Time.deltaTime;
         }
 
-        // 애니메이션 갱신
+        // 점프 조건
+        // if (jumpBufferCounter > 0f && coyoteCounter > 0f)
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        //     jumpBufferCounter = 0f;
+        //     coyoteCounter = 0f;
+        // }
+
+        if (jumpBufferCounter > 0f && coyoteCounter > 0f)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            jumpBufferCounter = 0f;
+            coyoteCounter = 0f;
+            groundLockCounter = groundLockTime; // 지면 판정 잠시 비활성화
+        }
+
+
+        // 애니메이션 업데이트
         anim.SetFloat("Speed", Mathf.Abs(moveInput.x));
         anim.SetBool("IsGrounded", isGrounded);
     }
 
     void FixedUpdate()
     {
-        // 땅 체크
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        if (groundLockCounter > 0f)
+        {
+            groundLockCounter -= Time.fixedDeltaTime;
+            isGrounded = false;
+        }
+        else
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        }
+        // 땅에 닿았는지 체크
+        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // 코요테 타임 타이머
+        if (isGrounded)
+            coyoteCounter = coyoteTime;
+        else
+            coyoteCounter -= Time.fixedDeltaTime;
 
         // 이동
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
     }
 }
